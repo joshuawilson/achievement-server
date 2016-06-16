@@ -18,14 +18,14 @@ public interface AchievementService {
     public void reset();
 
     /**
-     * Get the achievements for a specific user
+     * Get the achievements for a specific user.
      * @param uuid The user's uuis
      * @return The current list of achievements
      */
     public List<Achievement> achievements(String uuid);
 
     /**
-     * Update an achievement
+     * Update an achievement.
      * @param uuid The user uuid
      * @param achievementType The achievement type
      * @return The current value of the achievement or null if it doesn't exist
