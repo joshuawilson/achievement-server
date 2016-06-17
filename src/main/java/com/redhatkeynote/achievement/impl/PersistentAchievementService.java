@@ -97,7 +97,6 @@ public class PersistentAchievementService implements AchievementService {
                 achievement.setAchievementType(achievementType);
                 achievements.add(achievement);
             }
-            player.setAchievements(achievements);
             em.persist(player);
         } else {
             player = results.get(0);
